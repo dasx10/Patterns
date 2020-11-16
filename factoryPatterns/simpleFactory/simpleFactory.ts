@@ -12,13 +12,10 @@ class PersonStaticFactory implements SimpleFactory {
         switch (type) {
             case 'person':
                 return new Person(name, age);
-                break;
             case 'admin':
                 return new Admin(name, age);
-                break;
             default:
                 return new Person(name, age);
-                break;
         }
     }
 }
